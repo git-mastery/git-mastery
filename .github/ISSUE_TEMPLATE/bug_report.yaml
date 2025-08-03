@@ -1,4 +1,4 @@
-name: "\U0001F41D Bug report test"
+name: "\U0001F41D Bug report"
 description: File a bug report with the Git-Mastery team
 title: "[BUG] "
 labels:
@@ -17,7 +17,9 @@ body:
   - type: textarea
     attributes:
       label: Describe the bug
-      description: Provide a clear and concise description of what the bug is. If applicable, share screenshots to help explain your problem.
+      description: Provide a clear and concise description of what the bug is. If applicable, share screenshots and the error message to help explain your problem.
+      placeholder: |
+        Include any errors as text as well.
     validations:
       required: true
   - type: textarea
@@ -35,15 +37,6 @@ body:
     attributes:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen. Omit if unknown
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: Error message
-      description: Paste the error message below
-      value: |
-        ```text
-        ```
     validations:
       required: false
   - type: textarea
@@ -74,49 +67,21 @@ body:
     attributes:
       label: System architecture
       options:
-        - arm64
         - amd64/x86_64
+        - arm64
     validations:
       required: true
-  - type: input
-    attributes:
-      label: Terminal
-      description: E.g. Git Bash/WSL/iTerm2/Alacritty/etc
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: Git version
-      description: Use `git --version`
-    validations:
-      required: false
-  - type: input
-    attributes:
-      label: Github CLI version
-      description: If installed, use `gh --version`
-    validations:
-      required: false
-  - type: input
-    attributes:
-      label: Git-Mastery CLI version
-      description: If installed, use `gitmastery version`
-    validations:
-      required: false
-  - type: dropdown
-    attributes:
-      label: Are you using SSH or HTTPS
-      description: If you have Github CLI installed
-      options:
-        - SSH
-        - HTTPS
-    validations:
-      required: false
   - type: textarea
     attributes:
-      label: Additional remarks
-      description: Any other remarks about this bug report?
-    validations:
-      required: false
+      label: Additional information
+      description: Additional questions that can help speed up the triaging process.
+      value: |
+        - Terminal (e.g. Git Bash/WSL/Alacritty): 
+        - Git version (using `git --version`): 
+        - Github CLI version (if installed, `gh --version`): 
+        - Git-Mastery CLI version (using `gitmastery version`):
+        - Are you using SSH or HTTPS (if you have setup Github CLI):
+        - Any other comments?
   - type: markdown
     attributes:
       value: |
