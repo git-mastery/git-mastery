@@ -14,12 +14,6 @@ body:
         # Bug report
 
         You are currently filing bug report with Git-Mastery.
-  - type: checkboxes
-    attributes:
-      label: Existing exercise check
-      options:
-        - label: I have verified that this exercise is not yet already in discussion, in progress, or exists
-          required: true
   - type: textarea
     attributes:
       label: Describe the bug
@@ -54,7 +48,7 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Log file
+      label: Upload log file
       description: |
         Please upload the `.gitmastery.log` file found in the root of your Git-Mastery exercises folder.
 
@@ -82,12 +76,6 @@ body:
       options:
         - arm64
         - amd64/x86_64
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: Terminal
-      description: E.g. Git Bash/WSL/iTerm2/Alacritty/etc
     validations:
       required: true
   - type: input
