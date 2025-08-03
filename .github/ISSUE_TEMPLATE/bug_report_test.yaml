@@ -1,0 +1,137 @@
+name: "\U0001F41D Bug report test"
+description: File a bug report with the Git-Mastery team
+title: "[BUG] "
+labels:
+  - bug
+  - needs triage
+assignees:
+  - woojiahao
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Bug report
+
+        You are currently filing bug report with Git-Mastery.
+  - type: checkboxes
+    attributes:
+      label: Existing exercise check
+      options:
+        - label: I have verified that this exercise is not yet already in discussion, in progress, or exists
+          required: true
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: Provide a clear and concise description of what the bug is. If applicable, share screenshots to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: What are the steps to reproduce the bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen. Omit if unknown
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Error message
+      description: Paste the error message below
+      value: |
+        ```text
+        ```
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Log file
+      description: |
+        Please upload the `.gitmastery.log` file found in the root of your Git-Mastery exercises folder.
+
+        Use `ls -la` to show hidden files.
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - MacOS
+        - Linux (specify below under Version)
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Operating system version
+      description: Name of your operating system version. If you are using Linux, include the name of your distro here as well.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: System architecture
+      options:
+        - arm64
+        - amd64/x86_64
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Terminal
+      description: E.g. Git Bash/WSL/iTerm2/Alacritty/etc
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Terminal
+      description: E.g. Git Bash/WSL/iTerm2/Alacritty/etc
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Git version
+      description: Use `git --version`
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Github CLI version
+      description: If installed, use `gh --version`
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Git-Mastery CLI version
+      description: If installed, use `gitmastery version`
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: Are you using SSH or HTTPS
+      description: If you have Github CLI installed
+      options:
+        - SSH
+        - HTTPS
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Additional remarks
+      description: Any other remarks about this bug report?
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        # Next steps
+
+        The Git-Mastery team will review the issue and respond accordingly.
