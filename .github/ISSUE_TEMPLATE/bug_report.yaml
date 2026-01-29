@@ -6,6 +6,11 @@ labels:
   - needs triage
 assignees:
   - woojiahao
+  - jovnc
+  - VikramGoyal23
+  - desmondwong1215
+  - jiaxinnns
+  - SAN-MUYUN
 type: Bug
 body:
   - type: markdown
