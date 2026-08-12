@@ -4,8 +4,6 @@ title: "[BUG] "
 labels:
   - bug
   - needs triage
-assignees:
-  - woojiahao
 type: Bug
 body:
   - type: markdown
