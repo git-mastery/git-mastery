@@ -11,7 +11,7 @@ body:
       value: |
         # Bug report
 
-        You are currently filing bug report with Git-Mastery.
+        You are currently filing bug report with Git-Mastery. (Team: @git-mastery/devs) 
   - type: textarea
     attributes:
       label: Describe the bug
